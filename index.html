@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alura DEV</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/monokai.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono" >
+    </head>
+
+    <body>        
+        <header class="cabecalho">
+            <div class="container">
+                <div class="items-esquerda">
+                    <h1><img class="img-alura" src="img/ALURA.svg"></h1>
+                    <h1><img class="img-dev" src="img/DEV.svg"></h1>
+                </div>                    
+                <div class="items-centro">
+                    <div>
+                        <input type="text" class="input-principal" placeholder="Busque por algo"/>
+                    </div>
+                </div>                
+                <div class="items-direita">
+                    <h1><img class="img-author" src="img/author.svg"></h1>
+                    <nav class="mobile">
+                        <a href="#" class="menu-navagecao-mobile">
+                            <img class="img-search" src="img/Search.svg" alt="Icone de busca">
+                        </a>
+                        <a href="#" class="menu-navagecao-mobile">
+                            <img class="img-hamburguer" src="img/hamburguer.svg" alt="Icone hamburguer">
+                        </a>
+                    </nav>
+                </div>                   
+            </div>            
+        </header>
+        
+        <main>
+            <section class="section-esquerda items-esquerda">
+                <h1>Menu</h1>
+                <nav = class="menu">
+                    <ul>
+                        <li>
+                            <img src="img/editor-codigo.svg">
+                            <a class="menu-navegacao-link" href="index.html">Editor de código</a>
+                        </li>
+                        <li>
+                            <img src="img/comunidade.svg">
+                            <a class="menu-navegacao-link" href="comunidade.html">Comnunidade</a>
+                        </li>
+                        <li>
+                            <img class="img-author" src="img/author.svg">
+                        </li>
+                    </ul>                            
+                </nav>                    
+            </section>
+            
+            <section class="section-quadro items-centro comunidade">
+                <fieldset class="fieldset-quadro">
+                    <div>                            
+                        <div class="div-botoes">
+                            <img src="img/mac_buttons.svg"/>
+                        </div>
+                        <div class="div-textarea codigo-wrapper">
+                            <pre><code class="preview" contenteditable="true" aria-label="editor"></code></pre>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-button" >
+                    <button class="button botao-highlight" >Visualizar com o highlight</button>
+                </fieldset>
+            </section>
+
+            <section class="section-direita items-direita">
+                <div>
+                    <h1 class="titulo">Seu Projeto</h1>
+                    <fieldset>
+                        <input type="text" class="nome-projeto" placeholder="Nome do seu projeto">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <input type="text" class="descricao-projeto" placeholder="Descrição do seu projeto">                        
+                    </fieldset>
+                    
+                </div>
+
+                <div>
+                    <h1 class="titulo">Personalização</h1>
+                    <div class="personalizacao-tablet">
+                        <fieldset>
+                            <select class="linguagem">
+                                <option>Javascript</option>
+                                <option>HTML</option>
+                                <option>CSS</option>
+                            </select>                        
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="color-picker">
+                                <div class="color-element"></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset>
+                    <button class="button" >Salvar projeto</button>
+                </fieldset>
+            </section>
+        </main>        
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <script src="../js/pickr-color.js"></script>
+    <script src="../js/index.js"></script>
+</html>

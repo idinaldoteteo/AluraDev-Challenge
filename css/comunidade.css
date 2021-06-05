@@ -1,0 +1,243 @@
+.section-esquerda li:nth-child(2){
+    opacity: 1;
+}
+.section-esquerda li:nth-child(1){
+    opacity: 0.5;
+}
+/* somente para testar
+header div, main div {
+    border: 1px solid #ffffff;
+    height: 50px;
+}
+*/
+.cabecalho {
+    display: flex;    
+}
+.esquerda, .direita {
+    width: 25%;
+}
+.esquerda {
+    display: flex;
+    align-items: center;
+}
+.cabecalho .centro {
+    width: 50%;
+    padding-left: 20px;
+}
+.fieldset-quadro {
+    height: 288px;
+}
+.container-author {
+    direction: rtl;
+}
+.container-cards {
+    display: flex;
+    width: 75%;
+    padding-left: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards {
+    width: 49%;
+    height: 540px;
+    margin: 0 0 24px 0;      
+}
+.cards:nth-child(1) .fieldset-quadro{
+    background: #9AFF6B;
+}
+.cards:nth-child(2) .fieldset-quadro{
+    background: #6B83FF;
+}
+.cards:nth-child(3) .fieldset-quadro{
+    background: #FFC46B;
+}
+.cards:nth-child(4) .fieldset-quadro{
+    background: #FF6BCD;
+}
+.iteracoes {
+    display: none;
+    align-items: center;
+}
+.iteracao{
+    display: flex;
+    align-items: center;
+}
+.iteracoes img:not(:last-child) {
+    width: 18px;
+}
+.iteracao h1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 8px;
+}
+.contadores, .author {
+    width: 50%;
+    padding-left: 10px;
+}
+.author {
+    justify-content: flex-end;
+}
+.projeto {
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+.projeto .titulo {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 31px; 
+    margin: 8px 0;
+}
+.projeto .descricao {
+    margin: 8px 0;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 24px;
+}
+.show {
+    display: flex;
+    transition: 1ms ease;    
+}
+@media screen and (max-width: 991px) {
+    main {
+        flex-direction: column;
+    }    
+    .mobile {
+        display: flex;
+    }
+    .img-author, .img-search {
+        display: none;
+    }
+    .menu li:last-child{
+        display: block;
+    }
+    .img-hamburguer {
+        display: flex;
+    }    
+    .container .items-direita {
+        align-items: center;
+    }
+    .container .items-centro, .container .items-direita {
+        padding-left: 40px;
+    }
+    .section-esquerda {
+        display: none;
+    }
+    .section-quadro {
+        margin: 0;
+    }    
+    .section-direita {
+        flex-direction: column;
+    }
+    .items-centro{
+        width: 100%;
+        padding: 0;
+    }
+    .items-direita {
+        width: 100%;
+        padding: 0;
+    }
+    .section-direita .descricao-projeto {
+        margin: 0;
+    }
+    .descricao-projeto {
+        margin: 0;
+    }
+    .titulo {
+        margin: 40px 0 16px 0;
+    }    
+    .personalizacao-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .personalizacao-tablet .linguagem {        
+        flex-direction: row;
+    }
+    .personalizacao-tablet fieldset {
+        width: 48%;
+    }
+    .hamburguer {
+        display: block;
+        position: absolute;
+        right: 1%;
+        background: #051D3B;
+        height: 60%;
+        padding: 2%;
+        border-radius: 8px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 5px 5px 5px #ffffff;
+    }
+    
+
+}
+
+@media screen and (max-width:640px){
+    body {
+        margin: 3%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .cabecalho .items-centro {
+        display: none;
+    }
+    .img-author{
+        display: none;
+    }
+    .img-search {
+        display: block;
+    }
+    .menu li:last-child{
+        display: block;
+    }
+    .section-esquerda{
+        display: none;
+    }
+    .items-centro {
+        width: 100%;
+        margin: 0;
+    }
+    .items-direita {
+        width: 100%;
+    }
+    .section-direita > h1{
+        margin: 25px 0;
+    }
+    .section-direita .descricao-projeto {
+        margin: 0;
+    }
+    .descricao-projeto {
+        margin: 0px;
+    }
+    .titulo {
+        margin: 40px 0 16px 0;
+    }
+    .mobile{
+        display: flex;
+        position: absolute;
+        right: 3%;
+        margin: 0 3%;
+    }
+    .mobile a{
+        padding-left: 5%;
+    }
+    .mobile a:first-child{
+        margin-right: 34px;
+    }
+    .hamburguer {
+        display: block;
+        position: absolute;
+        right: 1%;
+        background: #051D3B;
+        height: 60%;
+        padding: 2%;
+        border-radius: 8px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 5px 5px 5px #ffffff;
+        width: 70%;
+    }
+    
+}
