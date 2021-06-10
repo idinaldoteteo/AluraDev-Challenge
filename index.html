@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>        
@@ -61,14 +62,34 @@
             </section>
             
             <section class="section-quadro items-centro comunidade">
+                <div>
+                    <div class="div-botao-exportar exportar">            
+                        <div>                                
+                            <p class="botao-exportar">Exportar </p>                                                                        
+                            <i class="fa fa-angle-double-down button-secundario" ></i>                                
+                        </div>                       
+                    </div>
+                    <div class="div-quadro-exportar exportar">
+                        <div>
+                            <p>Nome: </p>    
+                            <input class="input-nome-file" type="text" placeholder="Qual o nome?">                          
+                            <p>Tipo</p>
+                            <select class="button botao-exportar select-tipo-file">
+                                <option>png</option>
+                                <option>jpg</option>
+                            </select> 
+                            <i class="fa fa-download button-secundario" ></i>
+                        </div>
+                    </div>
+                </div>
                 <fieldset class="fieldset-quadro">
                     <div>                            
-                        <div class="div-botoes">
-                            <img src="img/mac_buttons.svg"/>
+                        <div class="div-botao-exportar exportar">
+                            <img src="img/mac_buttons.svg"/>                            
                         </div>
                         <div class="div-textarea codigo-wrapper">
                             <pre><code class="preview" contenteditable="true" aria-label="editor"></code></pre>
-                        </div>
+                        </div>                                              
                     </div>
                 </fieldset>
                 <fieldset class="fieldset-button" >
@@ -116,5 +137,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
     <script src="../js/pickr-color.js"></script>
+    <script src="../js/dom-to-image.min.js"></script>
+    <script src="../js/FileSaver.min.js"></script>
     <script src="../js/index.js"></script>
 </html>

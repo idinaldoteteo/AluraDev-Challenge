@@ -38,10 +38,12 @@ const pickr = Pickr.create({
 });
 
 pickr.on('change', (color, instance) => {
-    trocarCor(color.toRGBA().toString())
+    trocarCor(color.toRGBA().toString(), this)
 });
 
-function trocarCor(elemento){
+function trocarCor(elemento, instance){
     let quadro = document.querySelector(".fieldset-quadro")
     quadro.style.background = elemento
+    document.querySelector(".pcr-button").style = `--pcr-color:${elemento}`
+    
 }
